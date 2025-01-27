@@ -203,11 +203,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-button:hover,
-.order-button:focus {
-  background-color: #404bbf;
-}
-
 /* LIST COMMON STYLES*/
 .list-item .item-text {
   font-size: 16px;
@@ -310,7 +305,10 @@ img {
   fill: #f4f4fd;
 }
 
-.social-link:hover, .social-link:focus {
+.order-button:hover,
+.order-button:focus,
+.social-link:hover,
+.social-link:focus {
   background-color: #404bbf;
 }
 
@@ -418,7 +416,8 @@ img {
   justify-content: baseline;
 }
 
-.social-link:hover.footer-link, .social-link:focus.footer-link {
+.social-link:hover.footer-link,
+.social-link:focus.footer-link {
   background-color: #31d0aa;
 }
 

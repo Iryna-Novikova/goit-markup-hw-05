@@ -402,9 +402,12 @@ img {
 }
 
 .footer-social-thumb {
-  margin-right: 120px;
   max-width: 208px;
   margin-left: 120px;
+}
+
+.footer-list {
+  gap: 16px;
 }
 
 .footer-social-text {

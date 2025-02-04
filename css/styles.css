@@ -671,7 +671,7 @@ img {
 }
 
 .textarea-box {
-margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .form-textarea {
@@ -681,7 +681,7 @@ margin-bottom: 8px;
   height: 120px;
   font-size: 12px;
   color: rgba(46, 47, 66, 0.4);
-  background-color: transparent
+  background-color: transparent;
 }
 
 .form-textarea::placeholder {
@@ -724,28 +724,29 @@ margin-bottom: 8px;
 }
 
 .ok-thumb {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   width: 16px;
   height: 16px;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-
+  fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-ok {
   position: absolute;
-  fill: tomato;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-ok:checked + .label-ok > .ok-thumb {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
+  fill: #F4F4FD;
 }

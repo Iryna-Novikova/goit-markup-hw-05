@@ -498,17 +498,20 @@
           <p class="footer-text footer-select-text">Subscribe</p>
           <form class="subscribe-form">
             <label cass="subcribe-label">
-              <input id="email-send" type="email"
-              name="email-send" 
-              class="subscribe-email-input" 
-              placeholder="E-mail"/>
+              <input
+                id="email-send"
+                type="email"
+                name="email-send"
+                class="subscribe-email-input"
+                placeholder="E-mail"
+              />
             </label>
             <button type="submit" class="subscribe-button">
               Subscribe
               <svg class="icon-email-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-email-send"></use>
               </svg>
-            </button>                                                                                                                                                                                                                           
+            </button>
           </form>
         </div>
       </div>
@@ -531,9 +534,12 @@
           <div class="input-box">
             <label for="user-name" class="form-label">Name</label>
             <div class="input-thumb">
-              <input id="user-name" 
-              name="user-name" 
-              type="text" class="form-input" />
+              <input
+                id="user-name"
+                name="user-name"
+                type="text"
+                class="form-input"
+              />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -541,10 +547,14 @@
           </div>
           <!-- phone -->
           <div class="input-box">
-            <label for="phone" class="form-label">Phone</label>
+            <label for="user-phone" class="form-label">Phone</label>
             <div class="input-thumb">
-              <input id="phone" 
-              name="phone" type="tel" class="form-input" />
+              <input
+                id="user-phone"
+                name="user-phone"
+                type="tel"
+                class="form-input"
+              />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
@@ -552,10 +562,14 @@
           </div>
           <!-- email -->
           <div class="input-box">
-            <label for="email" class="form-label">Email</label>
+            <label for="user-email" class="form-label">Email</label>
             <div class="input-thumb">
-              <input id="email" 
-              name="email" type="email" class="form-input" />
+              <input
+                id="user-email"
+                name="user-email"
+                type="email"
+                class="form-input"
+              />
               <svg class="form-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
@@ -563,8 +577,7 @@
           </div>
           <!-- comment -->
           <div class="textarea-box">
-            <label for="user-comment" 
-            class="form-label">Comment</label>
+            <label for="user-comment" class="form-label">Comment</label>
             <textarea
               id="user-comment"
               name="user-comment"
@@ -572,33 +585,28 @@
               placeholder="Text input"
             ></textarea>
           </div>
+          <!-- agreement box -->
+          <div class="agreement-form">
+            <input
+              id="user-privacy"
+              name="user-privacy"
+              type="checkbox"
+              class="input-ok visually-hidden"
+            />
+            <label for="user-privacy" class="label-ok">
+              <span class="ok-thumb">
+                <svg class="icon-ok" width="10" height="8">
+                  <use href="./images/icons.svg#icon-ok"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy-ref">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" name="send-info-button" class="order-button">
+            Send
+          </button>
         </form>
-
-        <!-- Privat Policy agreement -->
-        <!-- <form class="agreement-form">
-          <input id="ok" type="checkbox" name="ok" class="input-ok" />
-          <label for="ok" class="label-ok"
-            >I accept the terms and conditions of the
-            <span
-              ><a href="" class="privacy-policy-ref">Privacy Policy</a></span
-            >
-          </label>
-        </form> -->
-        <div class="agreement-form">
-          <input id="input-ok" type="checkbox" class="input-ok" name="ok" />
-          <label for="input-ok" class="label-ok">
-            <span class="ok-thumb">
-              <svg class="icon-ok" width="10" height="7">
-                <use href="./images/icons.svg#icon-ok"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a href="" class="privacy-policy-ref">Privacy Policy</a>
-          </label>
-        </div>
-        <button type="submit" name="send-info-button" class="order-button">
-          Send
-        </button>
       </div>
     </div>
   </body>

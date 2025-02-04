@@ -460,7 +460,7 @@
         </div>
 
         <div class="footer-social-thumb">
-          <p class="footer-text footer-social-text">Social media</p>
+          <p class="footer-text footer-select-text">Social media</p>
           <ul class="social-list footer-list">
             <li class="social-item">
               <a class="social-link footer-link" href="">
@@ -492,7 +492,108 @@
             </li>
           </ul>
         </div>
+
+        <!-- Subscribe form -->
+        <div class="footer-subscribe-thumb">
+          <p class="footer-text footer-select-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label>
+              <input id="email" type="text" 
+              class="Subscribe-email-input" 
+              placeholder="E-mail"/>
+            </label>
+            <button type="submit" class="subscribe-button">
+              <p>Subscribe</p>
+              <svg class="icon-email-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-email-send"></use>s
+              </svg>
+            </button>                                                                                                                                                                                                                           
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- модальне вікно -->
+    <div class="backdrop">
+      <div class="modal-window">
+        <!--  кнопка закриття вікна  -->
+        <button class="form-close-button" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+
+        <!-- введення інформації користувача -->
+        <form class="user-form">
+          <!-- name -->
+          <div class="input-box">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-thumb">
+              <input id="name" type="text" class="form-input" />
+              <svg class="form-input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- phone -->
+          <div class="input-box">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-thumb">
+              <input id="phone" type="tel" class="form-input" />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- email -->
+          <div class="input-box">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-thumb">
+              <input id="phone" type="email" class="form-input" />
+              <svg class="form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- comment -->
+          <div class="textarea-box">
+            <label for="comment" class="form-label">Comment</label>
+            <textarea
+              id="comment"
+              type="text"
+              class="form-input form-textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+        </form>
+
+        <!-- Privat Policy agreement -->
+        <!-- <form class="agreement-form">
+          <input id="ok" type="checkbox" name="ok" class="input-ok" />
+          <label for="ok" class="label-ok"
+            >I accept the terms and conditions of the
+            <span
+              ><a href="" class="privacy-policy-ref">Privacy Policy</a></span
+            >
+          </label>
+        </form> -->
+        <div class="agreement-form">
+          <input id="input-ok" type="checkbox" class="input-ok" name="ok" />
+          <label for="input-ok" class="label-ok">
+            <span class="ok-thumb">
+              <svg class="icon-ok" width="10" height="7">
+                <use href="./images/icons.svg#icon-ok"></use>
+              </svg>
+            </span>
+            <p class="text-ok">I accept the terms and conditions of the</p>
+            <a href="" class="privacy-policy-ref">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="submit" name="send-info-button" class="order-button">
+          Send
+        </button>
+      </div>
+    </div>
   </body>
 </html>
